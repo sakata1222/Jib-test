@@ -1,6 +1,9 @@
-## for gradle
+## for gradle and Jib
 .gradle
-/build/
+/build/*
+!/build/jib-docker-context
+/build/jib-docker-context/*
+!/build/jib-docker-context/Dockerfile
 
 # Ignore Gradle GUI config
 gradle-app.setting
