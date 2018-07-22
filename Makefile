@@ -1,0 +1,5 @@
+
+
+exportDockerfile:
+	./gradlew jibExportDockerContext
+

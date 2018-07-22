@@ -23,6 +23,15 @@ repositories {
     jcenter()
 }
 
+jib {
+    from {
+        image = 'openjdk:alpine'
+    }
+    container {
+        jvmFlags = ['-Xmx1024m']
+    }
+}
+
 dependencies {
     // This dependency is found on compile classpath of this component and consumers.
     compile 'com.google.guava:guava:23.0'
